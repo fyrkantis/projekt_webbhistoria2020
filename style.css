@@ -10,7 +10,7 @@
 	--primaryLight: #f1eeff;
 
 	--sidebarWidth: calc(5em + 15vw);
-	--footerHeight: 5em;
+	--footerHeight: 6em;
 
 	margin: 0px;
 	padding: 0px;
@@ -19,7 +19,7 @@
 }
 
 body.backgroundFrame {
-	min-height: 100vh;
+	min-height: calc(100vh - 2em);
 	margin-bottom: var(--footerHeight);
 
 	padding-left: var(--sidebarWidth);
@@ -36,6 +36,15 @@ div.backgroundFrame {
 	margin: 1em;
 	padding: 1em;
 	background-color: var(--primaryLight);
+}
+
+img {
+	width: 100%;
+}
+
+iframe.videoPlayer {
+	width: calc(100vw - 5em - var(--sidebarWidth));
+	height: calc((100vw - 5em - var(--sidebarWidth)) * 0.55);
 }
 
 iframe.sidebar {
@@ -56,4 +65,25 @@ iframe.footer {
 	height: var(--footerHeight);
 
 	position: absolute;
+}
+
+a {
+	color: var(--secondaryBlue);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+hr {
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+
+	border: none;
+	border-bottom: solid var(--tertiaryBlue) 3px;
+}
+
+p {
+	margin-bottom: 0.5em;
 }

@@ -6,7 +6,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    	<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css">
+		
+		<!-- Workaround to fix transition bug on chrome. -->
+		<script> </script>
 	</head>
 	<style>
 		body {
@@ -18,10 +21,46 @@
 			text-align: center;
 			user-select: none;
 		}
+
+		a div {
+			padding: 0.8em;
+			
+			color: var(--tertiaryBlue);
+			background-color: var(--primaryBlue);
+
+			transition-duration: 0.2s;
+		}
+
+		a div.top {
+			margin-top: 1em;
+
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+
+		a div.bottom {
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+		}
+
+		a:hover div {
+			color: var(--primaryLight);
+			background-color: var(--tertiaryTeal);
+
+			text-decoration: underline;
+			transition-duration: 0.2s;
+		}
 	</style>
 	<body>
 		<h1>Dave's fantastic website</h4>
-		<!-- Navigation buttons to be added here -->
+		<a href="index.html" target="_parent"><div class="top"><b>Home Page</b></div></a>
+		<a href="arpanet.html" target="_parent"><div><b>1969</b> - Starten på internet</div></a>
+		<a href="studentTesting.html" target="_parent"><div><b>1978</b> - Elever får testa datorer</div></a>
+		<a href="worldWideWeb.html" target="_parent"><div><b>1989</b> - World wide web skapas</div></a>
+		<a href="404.html" target="_parent"><div><b>1993</b> - Världens första webbkamera</div></a>
+		<a href="404.html" target="_parent"><div><b>2006</b> - Streama musik genom Spotify</div></a>
+		<a href="404.html" target="_parent"><div><b>2011</b> - Mobilt bank-id och Swish</div></a>
+		<a href="404.html" target="_parent"><div class="bottom"><b>2025</b> - Slussen byggs klart i tid</div></a>
 	</body>
 	<script src="js/script.js"></script>
 </html>
