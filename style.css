@@ -10,7 +10,9 @@
 	--primaryLight: #f1eeff;
 
 	--sidebarWidth: calc(5em + 15vw);
-	--footerHeight: 6em;
+	--footerHeight: 7em;
+
+	--frameSpace: calc(0.8em + 1vw);
 
 	margin: 0px;
 	padding: 0px;
@@ -19,7 +21,9 @@
 }
 
 body.backgroundFrame {
-	min-height: calc(100vh - 2em);
+	min-height: calc(100vh - var(--footerHeight));
+	height: calc(100% - var(--footerHeight));
+
 	margin-bottom: var(--footerHeight);
 
 	padding-left: var(--sidebarWidth);
@@ -33,9 +37,11 @@ body.backgroundFrame {
 }
 
 div.backgroundFrame {
-	margin: 1em;
-	padding: 1em;
+	margin: var(--frameSpace);
+	padding: var(--frameSpace);
+
 	background-color: var(--primaryLight);
+	border-radius: 10px;
 }
 
 img {
@@ -43,8 +49,8 @@ img {
 }
 
 iframe.videoPlayer {
-	width: calc(100vw - 5em - var(--sidebarWidth));
-	height: calc((100vw - 5em - var(--sidebarWidth)) * 0.55);
+	width: 100%;
+	height: 40vw;
 }
 
 iframe.sidebar {
@@ -61,7 +67,7 @@ iframe.footer {
 	right: 0px;
 	bottom: calc(var(--footerHeight) * -1);
 
-	width: calc(100vw - var(--sidebarWidth) - 1em);
+	width: calc(100% - var(--sidebarWidth));
 	height: var(--footerHeight);
 
 	position: absolute;
@@ -82,6 +88,10 @@ hr {
 
 	border: none;
 	border-bottom: solid var(--tertiaryBlue) 3px;
+}
+
+ul {
+	margin-left: 1em;
 }
 
 p {
