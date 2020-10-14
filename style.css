@@ -12,7 +12,7 @@
 	--sidebarWidth: calc(5em + 15vw);
 	--footerHeight: 7em;
 
-	--frameSpace: calc(0.8em + 1vw);
+	--frameSpace: calc(1em + 1vw);
 
 	margin: 0px;
 	padding: 0px;
@@ -42,6 +42,30 @@ div.backgroundFrame {
 
 	background-color: var(--primaryLight);
 	border-radius: 10px;
+}
+
+div.contents {
+	max-width: max-content;
+	padding: var(--frameSpace);
+
+	color: var(--primaryLight);
+	background-color: var(--tertiaryTeal);
+
+	border-radius: 5px;
+}
+
+div.contents ul, div.contents li {
+	width: 100%;
+}
+
+div.contents a {
+	width: 100%;
+	color: var(--primaryTeal);
+	display: list-item;
+}
+
+div.contents a:hover {
+	color: var(--primaryLight);
 }
 
 img {
@@ -94,6 +118,25 @@ ul {
 	margin-left: 1em;
 }
 
+/* Trusted solution from stack overflow. */
+div.contents ul {
+	list-style-type: none;
+	counter-reset: item
+}
+
+div.contents a {
+	display: block
+}
+
+div.contents a:before {
+	content: counters(item, ".") " ";
+	counter-increment: item
+}
+
 p {
 	margin-bottom: 0.5em;
+}
+
+td, th {
+	border: solid 0.1em var(--tertiaryTeal);
 }
