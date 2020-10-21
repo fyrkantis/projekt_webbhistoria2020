@@ -1,1 +1,13 @@
-Här kan ni dokumentera tester:
+Hur kan sidan göras lättare att navigera?
+- 
+
+Hur skulle sidan kunna se bättre ut?
+- Titeln i navigations menyn kan bytas ut till en bild (eller inte).
+- Ändra bakgrundsfärgerna lite.
+- Lite mörkare färger.
+- 
+
+Vad borde annars anpassas?
+- Bättre anpassning för telefon.
+- HTML filern kan organiseras bättre.
+- 
