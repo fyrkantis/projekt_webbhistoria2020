@@ -114,8 +114,8 @@ hr {
 	border-bottom: solid var(--tertiaryBlue) 3px;
 }
 
-ul {
-	margin-left: 1em;
+ul, ol {
+	margin-left: 2em;
 }
 
 /* Trusted solution from stack overflow. */
@@ -137,6 +137,35 @@ p {
 	margin-bottom: 0.5em;
 }
 
-td, th {
+table {
+	width: 100%;
+	margin-bottom: 1em;
+	border-collapse: collapse;
+	
+}
+
+th, td {
+	padding: 0.2em;
 	border: solid 0.1em var(--tertiaryTeal);
 }
+
+th {
+	background-color: var(--tertiaryTeal);
+	color: var(--primaryLight);
+}
+
+/*tr:first-child th:first-child, tr:first-child th:first-child {
+	border-top-left-radius: 10px;
+}
+
+tr:first-child th:last-child, tr:first-child th:last-child {
+	border-top-right-radius: 10px;
+}
+
+tr:last-child th:first-child, tr:first-child th:first-child {
+	border-bottom-left-radius: 10px;
+}
+
+tr:last-child th:last-child, tr:first-child th:last-child {
+	border-bottom-right-radius: 10px;
+}*/
