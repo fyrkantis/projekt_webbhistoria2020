@@ -1,13 +1,21 @@
-Hur kan sidan göras lättare att navigera?
-- 
+Utvärdering:
+	Sidan började med en grundläggande layout, med navigations meny på vänstra sidan i en iframe och innehållen inrammade på en bakgrund till höger.
+	Sedan lades en massa artiklar till och en kontaktlista vid botten. CSS:n anpassades under tiden när fler typer av sake behövde läggas till.
+	När alla simpla artiklar var inlagda började jag kopiera in en mer komplicerad wikipedia sida, med en massa tabeller.
+	Detta krävde mer anpassningar till CSS och mycket användning av search & replace för att ändra enorma mängderna HTML.
+	
 
-Hur skulle sidan kunna se bättre ut?
-- Titeln i navigations menyn kan bytas ut till en bild (eller inte).
-- Ändra bakgrundsfärgerna lite.
-- Lite mörkare färger.
-- 
-
-Vad borde annars anpassas?
-- Bättre anpassning för telefon.
-- HTML filern kan organiseras bättre.
-- 
+Användar feedback:
+	Hur kan sidan göras lättare att navigera?
+		- 
+	
+	Hur skulle sidan kunna se bättre ut?
+		- Titeln i navigations menyn kan bytas ut till en bild (eller inte).
+		- Ändra bakgrundsfärgerna lite.
+		- Lite mörkare färger.
+		- 
+	
+	Vad borde annars anpassas?
+		- Bättre anpassning för telefon.
+		- HTML filern kan organiseras bättre.
+		- 
